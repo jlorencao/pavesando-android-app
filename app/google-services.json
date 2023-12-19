@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "205066022028",
+    "project_id": "pavesando-app",
+    "storage_bucket": "pavesando-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205066022028:android:14a5034ac6de8292785fa9",
+        "android_client_info": {
+          "package_name": "com.nettour.pavesandoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8NlDMpJ8ELKRmWowM3Jb_7LBVi2_CB28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
