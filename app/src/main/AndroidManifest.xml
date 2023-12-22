@@ -15,6 +15,9 @@
         android:theme="@style/Theme.PavesandoApp"
         tools:targetApi="31">
         <activity
+            android:name=".ui.home.tour.book.MuseumTourActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.home.HomeActivity"
             android:exported="false" />
         <activity

@@ -62,10 +62,6 @@ class LoginFragment : Fragment() {
             val email = _binding.emailEditText.text.trim().toString()
             val password = _binding.passwordEditText.text.trim().toString()
 
-            //dobbiamo controlare se la password ha una lunghezza di al meno 6 numeri/lettere
-
-
-
             //chiamando la funzione Login con i parametri email e password
             login(email, password)
 
