@@ -15,7 +15,7 @@
         android:theme="@style/Theme.PavesandoApp"
         tools:targetApi="31">
         <activity
-            android:name=".ui.home.tour.book.MuseumTourActivity"
+            android:name=".ui.MainActivity"
             android:exported="false" />
         <activity
             android:name=".ui.home.HomeActivity"
@@ -24,7 +24,7 @@
             android:name=".ui.entry.EntryActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.home.tour.book.MuseumTourActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
