@@ -1,13 +1,13 @@
-package com.nettour.pavesandoapp.ui.home.tour.book.welcome
+package com.nettour.pavesandoapp.ui.home.tour.book.content
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.nettour.pavesandoapp.R
-import com.nettour.pavesandoapp.databinding.FragmentWelcomeFirstScreenBinding
+import com.nettour.pavesandoapp.databinding.FragmentQuoteBetweenPagesBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -16,22 +16,22 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [WelcomeFirstScreenFragment.newInstance] factory method to
+ * Use the [QuoteBetweenPagesFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class WelcomeFirstScreenFragment : Fragment() {
+class QuoteBetweenPagesFragment : Fragment() {
 
-    private lateinit var _binding: FragmentWelcomeFirstScreenBinding
+    private var _binding: FragmentQuoteBetweenPagesBinding? = null
+    private val binding get() = _binding!!
+
 
     // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private var ARG_QUOTE_TEXT: String = "quote text"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+
         }
     }
 
@@ -39,18 +39,24 @@ class WelcomeFirstScreenFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentWelcomeFirstScreenBinding.inflate(inflater, container, false)
-        // Inflate the layout for this fragment
-        val view = _binding.root
 
-        _binding.nextButton.setOnClickListener {
-            Log.d("next_button", "clicked")
-            val manager = activity?.supportFragmentManager
-            manager!!.beginTransaction()
-                .replace(R.id.fragmentContainerView, WelcomeSecondScreenFragment())
-                .commit()
-        }
+        _binding = FragmentQuoteBetweenPagesBinding.inflate(inflater,container,false)
+        val view = binding.root
+        val quoteText = arguments?.getString(ARG_QUOTE_TEXT,"")
+        setQuote(quoteText.toString())
+
+        // Inflate the layout for this fragment
         return view
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+    fun setQuote(quoteText: String) {
+        val includedLayout = binding.quoteLayout
+        val quoteView = includedLayout.quoteTextView
+            quoteView.text = quoteText
     }
 
     companion object {
@@ -60,15 +66,14 @@ class WelcomeFirstScreenFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment WelcomeFirstScreenFragment.
+         * @return A new instance of fragment QuoteBetweenPagesFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            WelcomeFirstScreenFragment().apply {
+        fun newInstance(quoteText: String) =
+            QuoteBetweenPagesFragment().apply {
                 arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+                    putString(ARG_QUOTE_TEXT, quoteText)
                 }
             }
     }

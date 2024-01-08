@@ -11,8 +11,7 @@ import com.nettour.pavesandoapp.ui.home.tour.book.welcome.WelcomeFirstScreenFrag
 class MuseumTourActivity : AppCompatActivity() {
 
     private lateinit var _binding: ActivityMuseumTourBinding
-    private lateinit var leftViewPager: ViewPager
-    private lateinit var leftPageAdapter: BookPageAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

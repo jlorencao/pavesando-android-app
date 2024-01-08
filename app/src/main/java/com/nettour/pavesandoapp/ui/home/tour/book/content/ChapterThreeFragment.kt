@@ -89,7 +89,7 @@ class ChapterThreeFragment : Fragment() {
         _binding.contentLayout.firstParagraphTextView.text = getString(R.string.chapter_three_first_paragraph)
         _binding.contentLayout.firstParagraphBelowImageTextView.text = getString(R.string.chapter_three_first_paragraph_below_image)
         _binding.contentLayout.secondParagraphTextView.text = getString(R.string.chapter_three_second_paragraph)
-       //_binding.contentLayout.thirdParagraphTextView.text = getString(R.string.chapter_three_third_paragraph)
+        _binding.contentLayout.thirdParagraphTextView.text = ""
         _binding.contentLayout.callToActionTextView.text = getString(R.string.chapter_three_call_to_action)
 
         //setting Images

@@ -4,6 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcome_title">Benvenuti nel cuore dell\'arte e della visione di Cesare Pavese!</string>
     <string name="welcome_subtitle">Esplorate il nostro museo virtuale, dove le opere dell\'illustre scrittore prendono vita sotto il vostro sguardo curioso.</string>
+    <string name="welcome_second_title">Cosa ti aspetta:</string>
     <string name="chapter_one_label">Capitolo 1</string>
     <string name="chapter_one_title">“Tra le pagine della vita di Cesare Pavese”</string>
     <string name="chapter_one_first_paragraph">La prima sala permette di immergersi tra le vicende umane e professionali di Cesare Pavese</string>
@@ -26,4 +27,8 @@
     <string name="chapter_three_call_to_action">\t Sei incuriosito? Vedere per credere:</string>
     <string name="credit_for_audio_label">(Pavese Festival 2021, La Luna e i falò di Alessandro Preziosi per la Regia di Tommaso Mattei)</string>
     <string name="desk_wallpaper">desk Wallpaper</string>
+    <string name="quote_staircase">\"Leggendo tra le righe della vita di Cesare Pavese si giunge al secondo piano…\"</string>
+    <string name="quote_before_chapter_one">\"Un paese ci vuole, non fosse che il gusto di andarsene via.\" \n(La luna e i falò)</string>
+    <string name="quote_before_chapter_two">\"La letteratura è una difesa contro le offese della vita.\" \n(Il mestiere di vivere)</string>
+    <string name="quote_before_chapter_three">\"Non si ricordano i giorni, si ricordano gli attimi.\" \n(Il mestiere di vivere)</string>
 </resources>
