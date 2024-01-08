@@ -2,4 +2,28 @@
     <string name="app_name">Pavesando App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_title">Benvenuti nel cuore dell\'arte e della visione di Cesare Pavese!</string>
+    <string name="welcome_subtitle">Esplorate il nostro museo virtuale, dove le opere dell\'illustre scrittore prendono vita sotto il vostro sguardo curioso.</string>
+    <string name="chapter_one_label">Capitolo 1</string>
+    <string name="chapter_one_title">“Tra le pagine della vita di Cesare Pavese”</string>
+    <string name="chapter_one_first_paragraph">La prima sala permette di immergersi tra le vicende umane e professionali di Cesare Pavese</string>
+    <string name="chapter_one_first_paragraph_below_image">ripercorrendo le tappe della sua vita nei luoghi da lui attraversati.</string>
+    <string name="chapter_one_second_paragraph">\t Una serie di postazioni lungo le pareti invita il visitatore a leggere tra le righe di alcune opere dello scrittore, per coglierne le riflessioni più intime.</string>
+    <string name="chapter_one_third_paragraph">\t Qui, Tramite proiezioni e audio sarà possibile conoscere in maniera più approfondita alcune chicche e curiosità sulla vita dell’autore.</string>
+    <string name="chapter_one_call_to_action">\t Dai un’occhiata a quello che ti aspetta: </string>
+    <string name="chapter_two_label">Capitolo 2</string>
+    <string name="chapter_two_title">“Tra le prime edizioni e gli affetti personali”</string>
+    <string name="chapter_two_first_paragraph">Esplora l\'essenza letteraria di Cesare Pavese in una sala unica e avvolgente dove </string>
+    <string name="chapter_two_first_paragraph_below_image">sono custodite le prime edizioni delle sue opere iconiche.</string>
+    <string name="chapter_two_second_paragraph">L\'atmosfera accogliente, arricchita dalla luce soffusa, vi invita a immergervi nella storia tangibile dei primi passi di questo grande scrittore.</string>
+    <string name="chapter_two_third_paragraph">\t Lasciatevi stupire dai preziosi manoscritti e appunti qui oggi conservati gelosamente. Non potete non approfittarne per ammirare i suoi oggetti personali: la pipa, la penna e i suoi immancabili occhiali.</string>
+    <string name="chapter_two_call_to_action">\t Dai un’occhiata : </string>
+    <string name="chapter_three_label">Capitolo 3</string>
+    <string name="chapter_three_title">“Ricordando Pavese: La penna eterna dell\'Autore"</string>
+    <string name="chapter_three_first_paragraph">L’ultima sala vi invita ad entrare in dialogo con l’opera e la poetica pavesiana, grazie a </string>
+    <string name="chapter_three_first_paragraph_below_image">un nuovo allestimento multimediale interattivo.</string>
+    <string name="chapter_three_second_paragraph">\t Qui è custodita la copia originale dei Dialoghi con Leucò su cui lo scrittore ha lasciato la sua ultima frase, prima di togliersi la vita.</string>
+    <string name="chapter_three_call_to_action">\t Sei incuriosito? Vedere per credere:</string>
+    <string name="credit_for_audio_label">(Pavese Festival 2021, La Luna e i falò di Alessandro Preziosi per la Regia di Tommaso Mattei)</string>
+    <string name="desk_wallpaper">desk Wallpaper</string>
 </resources>

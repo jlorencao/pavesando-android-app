@@ -1,12 +1,11 @@
-package com.nettour.pavesandoapp.ui.home.tour.book
+package com.nettour.pavesandoapp.ui.home.tour.book.welcome
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.viewpager2.widget.ViewPager2
-import com.nettour.pavesandoapp.databinding.FragmentBookBinding
+import com.nettour.pavesandoapp.R
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -15,16 +14,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [BookFragment.newInstance] factory method to
+ * Use the [WelcomeSecondScreenFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class BookFragment : Fragment() {
-
-    private lateinit var _binding: FragmentBookBinding
-    private lateinit var viewPager2: ViewPager2
-    lateinit var pageAdapter: BookPageAdapter
-
-
+class WelcomeSecondScreenFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -41,19 +34,8 @@ class BookFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        //initializing the binding variable with the layout
-
-        _binding = FragmentBookBinding.inflate(inflater, container, false)
-        val view = _binding.root
-
-
-        //initializing ViewPager and PageAdapter
-        viewPager2 = _binding.viewPager
-        pageAdapter = BookPageAdapter(requireActivity())
-        viewPager2.adapter = pageAdapter
-        viewPager2.currentItem = 0
-
-        return view
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_welcome_second_screen, container, false)
     }
 
     companion object {
@@ -63,12 +45,12 @@ class BookFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment BookFragment.
+         * @return A new instance of fragment WelcomeSecondScreenFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            BookFragment().apply {
+            WelcomeSecondScreenFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

@@ -3,43 +3,33 @@ package com.nettour.pavesandoapp.ui.home.tour.book
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentPagerAdapter
+import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.viewpager.widget.PagerAdapter
+import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.nettour.pavesandoapp.R
+import com.nettour.pavesandoapp.ui.home.tour.book.content.ChapterOneFragment
+import com.nettour.pavesandoapp.ui.home.tour.book.content.ChapterThreeFragment
+import com.nettour.pavesandoapp.ui.home.tour.book.content.ChapterTwoFragment
 
-class BookPageAdapter(private val numPages: Int): PagerAdapter() {
+class BookPageAdapter(fa: FragmentActivity): FragmentStateAdapter(fa) {
 
-    private val layoutsArray = intArrayOf(
-        R.layout.layout_chapter_one_left_page,
-        R.layout.layout_chapter_one_right_page,
-        // Add more layout resource IDs for additional pages
+    private val fragments = listOf(
+        ChapterOneFragment(),
+        ChapterTwoFragment(),
+        ChapterThreeFragment()
     )
 
-    override fun getCount(): Int {
-        return numPages
+    override fun getItemCount(): Int {
+
+        return fragments.size
     }
 
-    override fun instantiateItem(container: ViewGroup, position: Int): Any {
-        val layoutInflater = LayoutInflater.from(container.context)
-        val layoutId = getLayoutResId(position)
-        val pageView: View = layoutInflater.inflate(layoutId, container, false)
-        container.addView(pageView)
-        return pageView
-    }
 
-    override fun isViewFromObject(view: View, `object`: Any): Boolean {
-        return view == `object`
-    }
-
-    override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
-        container.removeView(`object` as View)
-    }
-
-    private fun getLayoutResId(position: Int): Int {
-        return if (position < layoutsArray.size) {
-            layoutsArray[position]
-        } else {
-            // Return a default layout resource ID or handle out-of-bounds positions
-            R.layout.layout_chapter_one_left_page
-        }
+    override fun createFragment(position: Int): Fragment {
+        return fragments[position]
     }
 }

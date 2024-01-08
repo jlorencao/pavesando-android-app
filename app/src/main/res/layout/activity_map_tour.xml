@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".ui.home.tour.map.MapTourActivity">
+
+    <ImageView
+        android:id="@+id/mapWallpaperImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:src="@drawable/map_tour_wallpaper"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/foundationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="135dp"
+        android:clickable="true"
+        android:drawableStart="@drawable/baseline_close_24"
+        android:gravity="center"
+        android:text="Tu sei qui"
+        android:textAlignment="textStart"
+        android:textColor="#6E0101"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/mapWallpaperImageView"
+        app:layout_constraintStart_toStartOf="@+id/mapWallpaperImageView"
+        app:layout_constraintTop_toTopOf="@+id/mapWallpaperImageView" />
+
+    <TextView
+        android:id="@+id/paveseHouseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="289dp"
+        android:drawableEnd="@drawable/baseline_home_24"
+        android:text="Casa di Pavese"
+        android:textAlignment="textStart"
+        android:textColor="#5E0000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/mapWallpaperImageView"
+        app:layout_constraintStart_toStartOf="@+id/mapWallpaperImageView"
+        app:layout_constraintTop_toTopOf="@+id/mapWallpaperImageView" />
+
+    <TextView
+        android:id="@+id/walkButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="200dp"
+        android:drawableTop="@drawable/baseline_forest_24"
+        android:text="Passegiata su bosco"
+        android:textAlignment="center"
+        android:textColor="#184E04"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/mapWallpaperImageView"
+        app:layout_constraintTop_toTopOf="@+id/mapWallpaperImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

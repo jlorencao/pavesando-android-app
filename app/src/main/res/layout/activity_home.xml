@@ -6,13 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/mapTourButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HOME PAGE"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Cartina"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bookTourButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Tour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapTourButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
