@@ -7,6 +7,7 @@ import androidx.viewpager.widget.ViewPager
 import com.nettour.pavesandoapp.R
 import com.nettour.pavesandoapp.databinding.ActivityMuseumTourBinding
 import com.nettour.pavesandoapp.ui.home.tour.book.welcome.WelcomeFirstScreenFragment
+import com.nettour.pavesandoapp.ui.home.tour.map.MapTourFragment
 
 class MuseumTourActivity : AppCompatActivity() {
 
@@ -25,7 +26,7 @@ class MuseumTourActivity : AppCompatActivity() {
             .beginTransaction()
             .add(
                 R.id.fragmentContainerView,
-                BookFragment()
+                MapTourFragment()
             )
             .commit()
 

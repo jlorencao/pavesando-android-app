@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".ui.home.tour.map.MapTourActivity">
+
+    <ImageView
+        android:id="@+id/mapWallpaperImageView"
+        android:layout_width="560dp"
+        android:layout_height="360dp"
+        android:scaleType="centerCrop"
+        android:textStyle="bold"
+        android:src="@drawable/map_tour_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/foundationImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="84dp"
+        android:contentDescription="Fondazione Pavese"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="@+id/mapWallpaperImageView"
+        app:layout_constraintStart_toStartOf="@+id/mapWallpaperImageView"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        app:strokeColor="@color/black" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/paveseHouseImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="182dp"
+        android:contentDescription="Fondazione Pavese"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="@+id/mapWallpaperImageView"
+        app:layout_constraintTop_toTopOf="@+id/mapWallpaperImageView"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        app:strokeColor="@color/black" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/nutoHouseImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="59dp"
+        android:contentDescription="Fondazione Pavese"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="@+id/mapWallpaperImageView"
+        app:layout_constraintEnd_toEndOf="@+id/mapWallpaperImageView"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        app:strokeColor="@color/black" />
+
+    <TextView
+        android:id="@+id/paveseHousetextView"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/green"
+        android:clickable="true"
+        android:padding="05dp"
+        android:text="Casa Natale di Cesare Pavese"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/paveseHouseImageView"
+        app:layout_constraintEnd_toEndOf="@+id/paveseHouseImageView"
+        app:layout_constraintStart_toStartOf="@+id/paveseHouseImageView" />
+
+    <TextView
+        android:id="@+id/foundationTextView"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/green"
+        android:clickable="true"
+        android:padding="05dp"
+        android:text="Fondazione Cesare Pavese"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/foundationImageView"
+        app:layout_constraintStart_toStartOf="@+id/foundationImageView"
+        app:layout_constraintTop_toBottomOf="@+id/foundationImageView" />
+
+    <TextView
+        android:id="@+id/nutoHouseTextView"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/green"
+        android:clickable="true"
+        android:padding="05dp"
+        android:text="La Casa di Nuto"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/nutoHouseImageView"
+        app:layout_constraintStart_toStartOf="@+id/nutoHouseImageView"
+        app:layout_constraintTop_toBottomOf="@+id/nutoHouseImageView" />
+
+
+    <TextView
+        android:id="@+id/walkTextView"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/green"
+        android:clickable="true"
+        android:padding="02dp"
+        android:text="Passegiata di 11 minuti\n Mentre camina senti un bello racconto di Cesare Pavese"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/foundationImageView"
+        app:layout_constraintEnd_toStartOf="@+id/paveseHouseImageView"
+        app:layout_constraintStart_toStartOf="@+id/mapWallpaperImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/alertNutoTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="110dp"
+        android:background="@color/green"
+        android:clickable="true"
+        android:drawableTop="@drawable/baseline_info_24"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Alerta di Sicurezza"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nutoHouseImageView"
+        app:layout_constraintTop_toBottomOf="@+id/paveseHouseImageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
