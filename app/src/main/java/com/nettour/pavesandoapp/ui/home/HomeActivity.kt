@@ -1,6 +1,7 @@
 package com.nettour.pavesandoapp.ui.home
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.nettour.pavesandoapp.R
@@ -14,20 +15,25 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         _binding = ActivityHomeBinding.inflate(layoutInflater)
         val view = _binding.root
 
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+
         setContentView(view)
 
-        _binding.bookTourButton.setOnClickListener {
+        _binding.museumTourButton.setOnClickListener {
             //navigate to book tour
             val intent = Intent(this, MuseumTourActivity::class.java)
+            intent.putExtra("fragment","BookFragment")
             startActivity(intent)
         }
 
-        _binding.mapTourButton.setOnClickListener {
+        _binding.mapsTourButton.setOnClickListener {
             //navigate to map tour
-            val intent = Intent(this, MapTourActivity::class.java)
+            val intent = Intent(this, MuseumTourActivity::class.java)
+            intent.putExtra("fragment", "MapTourFragment" )
             startActivity(intent)
         }
     }

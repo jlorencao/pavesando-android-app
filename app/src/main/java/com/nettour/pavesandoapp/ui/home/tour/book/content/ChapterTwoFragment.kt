@@ -95,6 +95,7 @@ class ChapterTwoFragment : Fragment() {
         _binding.contentLayout.callToActionTextView.text = getString(R.string.chapter_two_call_to_action)
 
         //setting Images
+        _binding.contentLayout.roomImageView.setImageResource(R.drawable.second_chapter_image1)
 
 
         //setting video

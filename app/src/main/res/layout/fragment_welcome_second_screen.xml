@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:layout_margin="50dp"
     android:background="@drawable/border_radius_shape"
-    tools:context=".ui.home.tour.book.welcome.WelcomeFirstScreenFragment">
+    tools:context=".ui.home.tour.book.welcome.WelcomeFragment">
 
     <TextView
         android:id="@+id/welcomeTextView"

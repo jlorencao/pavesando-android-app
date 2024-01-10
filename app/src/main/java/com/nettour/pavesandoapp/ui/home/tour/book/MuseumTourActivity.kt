@@ -3,10 +3,9 @@ package com.nettour.pavesandoapp.ui.home.tour.book
 import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.viewpager.widget.ViewPager
+import android.util.Log
 import com.nettour.pavesandoapp.R
 import com.nettour.pavesandoapp.databinding.ActivityMuseumTourBinding
-import com.nettour.pavesandoapp.ui.home.tour.book.welcome.WelcomeFirstScreenFragment
 import com.nettour.pavesandoapp.ui.home.tour.map.MapTourFragment
 
 class MuseumTourActivity : AppCompatActivity() {
@@ -22,13 +21,26 @@ class MuseumTourActivity : AppCompatActivity() {
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         setContentView(view)
 
-        supportFragmentManager
-            .beginTransaction()
-            .add(
-                R.id.fragmentContainerView,
-                MapTourFragment()
-            )
-            .commit()
+        val fragmentToOpen = intent.getStringExtra("fragment")
 
+        if(fragmentToOpen != null) {
+            openFragment(fragmentToOpen)
+        }
+    }
+    private fun openFragment(fragmentToOpen: String) {
+
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+
+        when (fragmentToOpen){
+             "BookFragment" -> {
+              fragmentTransaction.replace(R.id.fragmentContainerView, BookFragment())
+             }
+            "MapTourFragment" -> {
+                fragmentTransaction.replace(R.id.fragmentContainerView, MapTourFragment())
+            }
+            else -> Log.d("error","error")
+        }
+           fragmentTransaction.commit()
     }
 }

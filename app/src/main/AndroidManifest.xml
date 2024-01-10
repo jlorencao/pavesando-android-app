@@ -17,7 +17,8 @@
         tools:targetApi="31">
         <activity
             android:name=".ui.home.tour.book.content.VrViewActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".ui.home.tour.map.MapTourActivity"
             android:exported="false"
@@ -28,7 +29,8 @@
             android:exported="false" />
         <activity
             android:name=".ui.home.tour.book.MuseumTourActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".ui.entry.EntryActivity"
             android:exported="false" />
