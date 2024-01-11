@@ -31,4 +31,15 @@
     <string name="quote_before_chapter_one">\"Un paese ci vuole, non fosse che il gusto di andarsene via.\" \n(La luna e i falò)</string>
     <string name="quote_before_chapter_two">\"La letteratura è una difesa contro le offese della vita.\" \n(Il mestiere di vivere)</string>
     <string name="quote_before_chapter_three">\"Non si ricordano i giorni, si ricordano gli attimi.\" \n(Il mestiere di vivere)</string>
+    <string name="chiesa">Chiesa</string>
+    <string name="chiesaDescrizione">La costruzione è datata tra la fine del XIII secolo e l\'inizio del XIV. La chiesa venne ampliata durante i secoli. nel 1926 l’edificio venne dismesso, sconsacrato e lasciato in stato di abbandono. Fu nel 1994 che il Comune decise di trasferire tra le mura della chiesa, acquistata dall’Amministrazione, il Centro Studi e la Biblioteca Civica, le cui sedi furono rese inagibili dall’alluvione. Oggi è la sede dell’Auditorium della Fondazione Cesare Pavese e ospita le mostre temporanee del Museo Pavesiano.</string>
+    <string name="pavese_ospita_calvino">Pavese ospita Calvino</string>
+    <string name="pavese_ospita_calvino2">7 settembre 2023 – 1 aprile 2024</string>
+    <string name="mostraDescrizione">Una serie di inediti, originali e prime edizioni celebrano la letteratura italiana del ‘900 e in particolare il rapporto che univa Cesare Pavese e Italo Calvino, maestro e allievo nell’Einaudi del secondo Dopoguerra.</string>
+    <string name="la_casa_di_pavese">La casa di Pavese</string>
+    <string name="pavese_des_1">Benvenuti a Casa Pavese, casa dove nacque Cesare e deve crebbe insieme alla sua famiglia.</string>
+    <string name="pavese_des_2">Un’ umile dimora di campagna con mobili all’antica e una raccolta di copie di manoscritti e opere d’arte e varie edizioni di libri sia in italiano sia in inglese. Non si tratta di una casa qualunque, bensì di una fonte d’ispirazione grazie ai paesaggi adiacenti per romanzi come “ La Luna e i falò”. Alle nostre spalle si erge La Collina della Gaminella e di fronte la Collina del Salto. Dalla casa Pavese notava il Moncucco che lo ispirò a scrivere la poesia “ I mari del sud”.</string>
+    <string name="pavese_des_3">Rivivi la casa di Cesare Pavese dove il tempo pare essersi fermato nel 900.</string>
+
+
 </resources>

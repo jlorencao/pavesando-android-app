@@ -17,8 +17,10 @@
         android:src="@drawable/desk_wallpaper"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/bookImageView"
@@ -38,6 +40,7 @@
         android:layout_marginBottom="-120dp"
         android:background="@android:color/transparent"
         android:src="@drawable/pavese_book"
+        android:foreground="?android:attr/selectableItemBackground"
         app:layout_constraintBottom_toBottomOf="@+id/deskImageView"
         app:layout_constraintEnd_toEndOf="@+id/deskImageView"
         app:layout_constraintStart_toStartOf="@+id/deskImageView" />
@@ -60,6 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
+        android:foreground="?android:attr/selectableItemBackground"
         android:background="@android:color/transparent"
         android:src="@drawable/pavese_write_machine"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,11 +87,24 @@
         android:layout_height="110dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="50dp"
+        android:foreground="?android:attr/selectableItemBackground"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         android:src="@drawable/pavese_pipe"
         app:layout_constraintEnd_toStartOf="@+id/mapsTourButton"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Shop"
+        android:textAlignment="center"
+        android:textColor="#B88A01"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/shopButton"
+        app:layout_constraintStart_toStartOf="@+id/shopButton"
+        app:layout_constraintTop_toBottomOf="@+id/shopButton" />
 
     <ImageButton
         android:id="@+id/mapsTourButton"
@@ -97,6 +114,7 @@
         android:layout_marginEnd="50dp"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
+        android:foreground="?android:attr/selectableItemBackground"
         android:src="@drawable/pavese_glasses"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,6 +138,7 @@
         android:layout_height="120dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="60dp"
+        android:foreground="?android:attr/selectableItemBackground"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         android:src="@drawable/pavese_pen"
@@ -131,7 +150,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:text="Shop"
+        android:text="La Fondazione"
         android:textAlignment="center"
         android:textColor="#C89705"
         android:textSize="11sp"
@@ -139,22 +158,5 @@
         app:layout_constraintHorizontal_bias="0.405"
         app:layout_constraintStart_toStartOf="@+id/penImageButton"
         app:layout_constraintTop_toBottomOf="@+id/penImageButton" />
-    <!--<Button
-        android:id="@+id/mapTourButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Cartina"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/bookTourButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Book Tour"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapTourButton" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
