@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -41,10 +42,7 @@
             android:name=".ui.home.tour.map.CasaPaveseActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
-        <activity
-            android:name=".ui.home.tour.map.PodcastWebViewActivity"
-            android:exported="false"
-            android:screenOrientation="landscape" />
+
         <activity
             android:name=".ui.home.HomeActivity"
             android:exported="true">

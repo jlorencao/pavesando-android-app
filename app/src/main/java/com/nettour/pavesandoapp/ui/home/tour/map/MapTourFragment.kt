@@ -1,6 +1,7 @@
 package com.nettour.pavesandoapp.ui.home.tour.map
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -52,9 +53,9 @@ class MapTourFragment : Fragment() {
         }
 
         _binding.walkTextView.setOnClickListener {
-            //open a webview with the link to spotfy podcast
-            val intent = Intent(requireActivity(), PodcastWebViewActivity::class.java)
-            startActivity(intent)
+            //open the link to spotify podcast
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://open.spotify.com/episode/0pFNTZJG086yo07YgucqsC?si=4Q-AtnGiQq6Ep-LNkfkp5g"))
+            startActivity(browserIntent)
         }
 
         _binding.paveseHousetextView.setOnClickListener {

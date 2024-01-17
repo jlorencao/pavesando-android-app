@@ -17,6 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/chapter_one_label"
+            android:fontFamily="@font/playfair_display_medium"
             android:layout_gravity="center"
             android:textSize="12sp" />
         
@@ -26,7 +27,10 @@
             android:layout_height="wrap_content"
             android:text="@string/chapter_one_title"
             android:textSize="14sp"
+            android:textColor="@color/red"
             android:textAlignment="center"
+            android:fontFamily="@font/playfair_display_medium"
+            android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:layout_gravity="center"/>
         
@@ -34,21 +38,29 @@
             android:id="@+id/fistParagraphTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp">
 
             <ImageView
                 android:id="@+id/roomImageView"
-                android:layout_width="80dp"
-                android:layout_height="60dp"
+                android:layout_width="65dp"
+                android:scaleType="fitXY"
+                android:layout_height="70dp"
+                android:layout_marginStart="8dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:background="@color/white"
                 android:src="@drawable/ic_launcher_background"/>
+
             <TextView
                 android:id="@+id/firstParagraphTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/chapter_one_first_paragraph"
+                android:fontFamily="@font/playfair_display_medium"
                 android:textSize="12sp"
+                android:paddingTop="0dp"
                 android:layout_toEndOf="@+id/roomImageView"/>
 
             <TextView
@@ -57,8 +69,10 @@
                 android:layout_height="wrap_content"
                 android:text="@string/chapter_one_first_paragraph_below_image"
                 android:textSize="12sp"
+                android:fontFamily="@font/playfair_display_medium"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
+                android:paddingTop="03dp"
                 android:layout_below="@+id/roomImageView"/>
 
             <LinearLayout
@@ -75,7 +89,7 @@
 
                  <ImageButton
                      android:id="@+id/controlAudioButton"
-                     android:layout_width="50dp"
+                     android:layout_width="48dp"
                      android:layout_height="48dp"
                      android:clickable="true"
                      android:background="#9FEADBC9"
@@ -86,7 +100,7 @@
                     android:id="@+id/audioVisualizer"
                     android:visibility="gone"
                     android:layout_width="140dp"
-                    android:layout_height="40dp" />
+                    android:layout_height="35dp" />
 
             </LinearLayout>
 
@@ -98,6 +112,7 @@
                 android:textStyle="italic"
                 android:layout_gravity="center"
                 android:textAlignment="center"
+                android:fontFamily="@font/playfair_display_regular"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:layout_below="@+id/audioLayout"
@@ -109,8 +124,8 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="0.5"
-        android:paddingStart="06dp"
-        android:paddingEnd="45dp"
+        android:paddingStart="02dp"
+        android:paddingEnd="43dp"
         android:orientation="vertical">
 
         <TextView
@@ -118,29 +133,58 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="12sp"
-            android:paddingTop="02dp"
+            android:fontFamily="@font/playfair_display_medium"
             android:text="@string/chapter_one_second_paragraph" />
         <TextView
             android:id="@+id/thirdParagraphTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/playfair_display_medium"
             android:textSize="12sp"
             android:paddingTop="02dp"
             android:text="@string/chapter_one_third_paragraph" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/chapter3ImageView"
+                android:layout_width="80dp"
+                android:scaleType="fitXY"
+                android:layout_height="70dp"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <ImageView
+                android:id="@+id/chapter3ImageView2"
+                android:layout_width="65dp"
+                android:scaleType="fitXY"
+                android:layout_height="70dp"
+                android:visibility="gone"
+                android:layout_marginStart="8dp"
+                android:background="@color/white"
+                android:src="@drawable/ic_launcher_background"/>
+        </LinearLayout>
+
         <TextView
             android:id="@+id/callToActionTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="12sp"
+            android:fontFamily="@font/playfair_display_medium"
             android:paddingTop="02dp"
             android:text="@string/chapter_one_call_to_action" />
+
 
         <VideoView
             android:id="@+id/videoView"
             android:layout_gravity="center"
             android:layout_margin="05dp"
-            android:layout_width="100dp"
-            android:layout_height="60dp"/>
+            android:layout_width="80dp"
+            android:layout_height="55dp"/>
 
     </LinearLayout>
 

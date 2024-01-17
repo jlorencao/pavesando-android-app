@@ -28,9 +28,9 @@
     <string name="credit_for_audio_label">(Pavese Festival 2021, La Luna e i falò di Alessandro Preziosi per la Regia di Tommaso Mattei)</string>
     <string name="desk_wallpaper">desk Wallpaper</string>
     <string name="quote_staircase">\"Leggendo tra le righe della vita di Cesare Pavese si giunge al secondo piano…\"</string>
-    <string name="quote_before_chapter_one">\"Un paese ci vuole, non fosse che il gusto di andarsene via.\" \n(La luna e i falò)</string>
-    <string name="quote_before_chapter_two">\"La letteratura è una difesa contro le offese della vita.\" \n(Il mestiere di vivere)</string>
-    <string name="quote_before_chapter_three">\"Non si ricordano i giorni, si ricordano gli attimi.\" \n(Il mestiere di vivere)</string>
+    <string name="quote_before_chapter_one">\"Un paese ci vuole, non fosse che il gusto di andarsene via.\" \n \n(La luna e i falò)</string>
+    <string name="quote_before_chapter_two">\"La letteratura è una difesa contro le offese della vita.\" \n \n(Il mestiere di vivere)</string>
+    <string name="quote_before_chapter_three">\"Non si ricordano i giorni, si ricordano gli attimi.\" \n \n(Il mestiere di vivere)</string>
     <string name="chiesa">Chiesa</string>
     <string name="chiesaDescrizione">La costruzione è datata tra la fine del XIII secolo e l\'inizio del XIV. La chiesa venne ampliata durante i secoli. nel 1926 l’edificio venne dismesso, sconsacrato e lasciato in stato di abbandono. Fu nel 1994 che il Comune decise di trasferire tra le mura della chiesa, acquistata dall’Amministrazione, il Centro Studi e la Biblioteca Civica, le cui sedi furono rese inagibili dall’alluvione. Oggi è la sede dell’Auditorium della Fondazione Cesare Pavese e ospita le mostre temporanee del Museo Pavesiano.</string>
     <string name="pavese_ospita_calvino">Pavese ospita Calvino</string>

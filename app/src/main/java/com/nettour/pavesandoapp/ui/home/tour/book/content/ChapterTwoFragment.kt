@@ -98,6 +98,7 @@ class ChapterTwoFragment : Fragment() {
         _binding.contentLayout.roomImageView.setImageResource(R.drawable.second_chapter_image1)
 
 
+
         //setting video
 
     }

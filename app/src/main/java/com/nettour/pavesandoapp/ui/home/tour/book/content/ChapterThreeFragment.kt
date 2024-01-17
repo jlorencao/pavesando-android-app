@@ -1,6 +1,7 @@
 package com.nettour.pavesandoapp.ui.home.tour.book.content
 
 import android.media.MediaPlayer
+import android.opengl.Visibility
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -93,9 +94,12 @@ class ChapterThreeFragment : Fragment() {
         _binding.contentLayout.callToActionTextView.text = getString(R.string.chapter_three_call_to_action)
 
         //setting Images
-        _binding.contentLayout.roomImageView.setImageResource(R.drawable.third_chapter_image2)
+        _binding.contentLayout.roomImageView.setImageResource(R.drawable.third_chapter_image3)
+        _binding.contentLayout.chapter3ImageView.setImageResource(R.drawable.third_chapter_image1)
+        _binding.contentLayout.chapter3ImageView2.setImageResource(R.drawable.third_chapter_image2)
 
-
+        _binding.contentLayout.chapter3ImageView.visibility = View.VISIBLE
+        _binding.contentLayout.chapter3ImageView2.visibility = View.VISIBLE
         //setting video
 
     }
