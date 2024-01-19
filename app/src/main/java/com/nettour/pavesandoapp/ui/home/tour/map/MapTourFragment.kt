@@ -84,7 +84,7 @@ class MapTourFragment : Fragment() {
     private fun showAlert() {
         val builder = AlertDialog.Builder(requireActivity())
 
-        builder.setTitle("Alerta di Sicurezza")
+        builder.setTitle("Allerta di Sicurezza")
         builder.setMessage(" Per motivi di sicurezza non è possibile raggiungere a piedi la struttura della casa di Nuto.")
 
         builder.setPositiveButton("OK") { dialog, which ->

@@ -1,5 +1,6 @@
 package com.nettour.pavesandoapp.ui.home.tour.book.content
 
+import android.content.Intent
 import android.media.MediaPlayer
 import android.opengl.Visibility
 import android.os.Bundle
@@ -8,6 +9,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.LinearLayout
+import androidx.appcompat.app.AlertDialog
+import androidx.core.view.marginTop
 import com.chibde.visualizer.LineBarVisualizer
 import com.nettour.pavesandoapp.R
 import com.nettour.pavesandoapp.databinding.FragmentChapterThreeBinding
@@ -73,9 +78,42 @@ class ChapterThreeFragment : Fragment() {
 
         }
 
+        includeBinding.videoButton.setOnClickListener{
+            val intent = Intent(requireContext(), VrViewActivity::class.java )
+            intent.putExtra("videoId","NZrAJWvDnrk")
+            startActivity(intent)
+        }
+
+        includeBinding.roomImageView.setOnClickListener {
+            showPopUp(R.drawable.third_chapter_image3)
+        }
+
+        includeBinding.chapter3ImageView.setOnClickListener {
+            showPopUp(R.drawable.third_chapter_image1)
+        }
+
+        includeBinding.chapter3ImageView2.setOnClickListener {
+            showPopUp(R.drawable.third_chapter_image2)
+        }
+
+
+
         return view
     }
 
+    private fun showPopUp(imageId: Int){
+        val inflater = LayoutInflater.from(requireContext())
+        val popupView = inflater.inflate(R.layout.popup_image_layout, null)
+
+        val largerImageView = popupView.findViewById<ImageView>(R.id.popUpImageView)
+        largerImageView.setImageResource(imageId)
+
+        val dialog = AlertDialog.Builder(requireContext())
+            .setView(popupView)
+            .create()
+
+        dialog.show()
+    }
     override fun onStop() {
         super.onStop()
         if (mediaPlayer != null) {
@@ -93,6 +131,7 @@ class ChapterThreeFragment : Fragment() {
         _binding.contentLayout.thirdParagraphTextView.text = ""
         _binding.contentLayout.callToActionTextView.text = getString(R.string.chapter_three_call_to_action)
 
+
         //setting Images
         _binding.contentLayout.roomImageView.setImageResource(R.drawable.third_chapter_image3)
         _binding.contentLayout.chapter3ImageView.setImageResource(R.drawable.third_chapter_image1)
@@ -100,7 +139,6 @@ class ChapterThreeFragment : Fragment() {
 
         _binding.contentLayout.chapter3ImageView.visibility = View.VISIBLE
         _binding.contentLayout.chapter3ImageView2.visibility = View.VISIBLE
-        //setting video
 
     }
 

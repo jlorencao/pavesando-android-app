@@ -57,6 +57,5 @@ class HomeActivity : AppCompatActivity() {
             startActivity(browserIntent)
         }
 
-
     }
 }

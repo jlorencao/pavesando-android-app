@@ -41,13 +41,7 @@ class WelcomeFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = _binding.root
 
-        /*_binding.nextButton.setOnClickListener {
-            Log.d("next_button", "clicked")
-            val manager = activity?.supportFragmentManager
-            manager!!.beginTransaction()
-                .replace(R.id.fragmentContainerView, WelcomeSecondScreenFragment())
-                .commit()
-        }*/
+
         return view
     }
 

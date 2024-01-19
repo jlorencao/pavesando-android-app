@@ -1,5 +1,6 @@
 package com.nettour.pavesandoapp.ui.home.tour.book.content
 
+import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.util.Log
@@ -7,6 +8,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import androidx.appcompat.app.AlertDialog
 import com.chibde.visualizer.LineBarVisualizer
 import com.nettour.pavesandoapp.R
 import com.nettour.pavesandoapp.databinding.FragmentChapterOneBinding
@@ -74,8 +77,33 @@ class ChapterOneFragment : Fragment() {
 
             }
 
+            includeBinding.videoButton.setOnClickListener{
+                val intent = Intent(requireContext(), VrViewActivity::class.java )
+                intent.putExtra("videoId","Mjk4tDsjfu4")
+                startActivity(intent)
+            }
+
+            includeBinding.roomImageView.setOnClickListener {
+                showPopUp()
+            }
+
             return view
         }
+
+
+    private fun showPopUp(){
+        val inflater = LayoutInflater.from(requireContext())
+        val popupView = inflater.inflate(R.layout.popup_image_layout, null)
+
+        val largerImageView = popupView.findViewById<ImageView>(R.id.popUpImageView)
+        largerImageView.setImageResource(R.drawable.first_chapter_image)
+
+        val dialog = AlertDialog.Builder(requireContext())
+            .setView(popupView)
+            .create()
+
+        dialog.show()
+    }
 
     override fun onStop() {
         super.onStop()
@@ -96,8 +124,6 @@ class ChapterOneFragment : Fragment() {
 
         //setting Image
         _binding.contentLayout.roomImageView.setImageResource(R.drawable.first_chapter_image)
-
-        //setting video
 
     }
 

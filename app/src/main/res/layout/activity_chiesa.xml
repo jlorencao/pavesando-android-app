@@ -4,32 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ui.home.tour.ChiesaActivity"
+    android:weightSum="2"
+    tools:context=".ui.home.tour.ChiesaActivity"
     android:orientation="horizontal">
 
-      <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
+     <RelativeLayout
           android:layout_width="0dp"
           android:layout_height="match_parent"
           android:orientation="vertical"
-          android:layout_weight="1">
+          android:layout_weight="0.9">
 
           <ImageView
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:src="@drawable/chiesauno"
-              android:scaleType="centerCrop"/>
+              android:scaleType="centerInside" />
+
+         <ImageButton
+             android:id="@+id/backButton"
+             android:layout_width="48dp"
+             android:layout_height="48dp"
+             android:layout_margin = "15dp"
+             android:background="@android:color/transparent"
+             android:src="@drawable/baseline_arrow_back_24"
+             app:tint="@color/black" />
 
 
-
-      </FrameLayout>
-
+     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_weight="1">
+        android:layout_weight="1.1">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -39,7 +46,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="30dp"
+                android:paddingTop="20dp"
                 android:orientation="vertical"
                 android:layout_margin="15dp">
 
@@ -47,14 +54,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/chiesa"
+                    android:fontFamily="@font/playfair_display_medium"
                     android:layout_gravity="center"
                     android:textStyle="bold"
                     android:layout_marginBottom="20dp"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"/>
 
-                <TextView
+               <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/playfair_display_medium"
                     android:layout_marginBottom="20dp"
                     android:text="@string/chiesaDescrizione"/>
 
@@ -64,7 +73,8 @@
                     android:text="@string/pavese_ospita_calvino"
                     android:layout_gravity="center"
                     android:textStyle="bold"
-                    android:textSize="20dp"
+                    android:fontFamily="@font/playfair_display_medium"
+                    android:textSize="20sp"
                     android:layout_marginBottom="5dp"/>
 
                 <TextView
@@ -72,35 +82,60 @@
                     android:layout_height="wrap_content"
                     android:text="@string/pavese_ospita_calvino2"
                     android:layout_gravity="center"
+                    android:fontFamily="@font/playfair_display_medium"
                     android:textStyle="bold"
                     android:layout_marginBottom="5dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/playfair_display_medium"
                     android:layout_marginBottom="20dp"
                     android:text="@string/mostraDescrizione"/>
 
-
-                <ImageView
-                     android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
-                     android:src="@drawable/esposizioneuno"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/esposzionedue"/>
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/firstImageView"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/esposizioneuno"/>
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/esposzionetre"/>
+                    <ImageView
+                        android:id="@+id/secondImageView"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/esposzionedue"/>
+                </LinearLayout>
 
-                <ImageView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/esposzionequattro"/>
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/thirdImageView"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/esposzionetre"/>
+
+                    <ImageView
+                        android:id="@+id/fourImageView"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/esposzionequattro"/>
+                </LinearLayout>
+
 
             </LinearLayout>
 
@@ -108,9 +143,6 @@
         </ScrollView>
 
     </LinearLayout>
-
-
-
 
 
 </LinearLayout>

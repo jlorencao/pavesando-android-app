@@ -50,7 +50,7 @@
                 android:layout_marginStart="8dp"
                 android:paddingStart="2dp"
                 android:paddingEnd="2dp"
-                android:background="@color/white"
+                android:background="@android:color/transparent"
                 android:src="@drawable/ic_launcher_background"/>
 
             <TextView
@@ -179,12 +179,16 @@
             android:text="@string/chapter_one_call_to_action" />
 
 
-        <VideoView
-            android:id="@+id/videoView"
-            android:layout_gravity="center"
+        <Button
+            android:id="@+id/videoButton"
             android:layout_margin="05dp"
-            android:layout_width="80dp"
-            android:layout_height="55dp"/>
+            android:text="Premi qui per vedere la sala in 360°"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:fontFamily="@font/playfair_display_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
