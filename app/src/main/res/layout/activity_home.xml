@@ -4,15 +4,167 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/black"
     tools:context=".ui.home.HomeActivity">
+
+    <ImageView
+        android:id="@+id/deskImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/desk_wallpaper"
+        android:scaleType="centerCrop"
+        android:src="@drawable/desk_wallpaper"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/bookImageView"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="-190dp"
+        android:contentDescription="@string/desk_wallpaper"
+        android:src="@drawable/open_book_wallpaper"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/museumTourButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-120dp"
+        android:background="@drawable/border_radius_shape"
+        android:src="@drawable/pavese_book"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/deskImageView"
+        app:layout_constraintEnd_toEndOf="@+id/deskImageView"
+        app:layout_constraintStart_toStartOf="@+id/deskImageView" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HOME PAGE"
+        android:layout_marginStart="-30dp"
+        android:layout_marginBottom="40dp"
+        android:rotation="-16"
+        android:text="Museo Tour"
+        android:fontFamily="@font/playfair_display_medium"
+        android:textColor="#E1AB0D"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/deskImageView" />
+
+    <ImageButton
+        android:id="@+id/churchTourButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/border_radius_shape"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="6dp"
+        android:src="@drawable/pavese_write_machine"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Mostre Temporanee"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        android:fontFamily="@font/playfair_display_medium"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/churchTourButton"
+        app:layout_constraintStart_toStartOf="@+id/churchTourButton"
+        app:layout_constraintTop_toBottomOf="@+id/churchTourButton" />
+
+    <ImageButton
+        android:id="@+id/shopButton"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="50dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/pavese_pipe"
+        app:layout_constraintEnd_toStartOf="@+id/mapsTourButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Shop"
+        android:fontFamily="@font/playfair_display_medium"
+        android:textAlignment="center"
+        android:textColor="#B88A01"
+
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/shopButton"
+        app:layout_constraintStart_toStartOf="@+id/shopButton"
+        app:layout_constraintTop_toBottomOf="@+id/shopButton" />
+
+    <ImageButton
+        android:id="@+id/mapsTourButton"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:src="@drawable/pavese_glasses"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Luoghi Pavesiani"
+        android:textAlignment="center"
+        android:textSize="11sp"
+        android:fontFamily="@font/playfair_display_medium"
+        android:textColor="#B88A01"
+        app:layout_constraintEnd_toEndOf="@+id/mapsTourButton"
+        app:layout_constraintStart_toStartOf="@+id/mapsTourButton"
+        app:layout_constraintTop_toBottomOf="@+id/mapsTourButton" />
+
+    <ImageButton
+        android:id="@+id/penImageButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/pavese_pen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/deskImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="La Fondazione"
+        android:fontFamily="@font/playfair_display_medium"
+        android:textAlignment="center"
+        android:textColor="#C89705"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/penImageButton"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="@+id/penImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/penImageButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
